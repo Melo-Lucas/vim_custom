@@ -1,25 +1,51 @@
-"Este arquivo serve para configurações permanentes no VIM
-"comentários são feitos numa linha iniciada com aspa dupla
+" ---------- .vimrc file made by: luck4o ----------
 
-"essa config adiciona números de identificação nas linhas
+" set compatibility to VIM only
+set nocompatible
+
+" Helps force plug-ins to load correctly when it is turned back on below
+filetype off
+
+" Turn on line numbering
 set number
 
-"essa config define a auto-indentação na escrita de códigos
+" Turn on syntax highlighting
+syntax on
+
+" For plug-ins to load correctly
+filetype plugin indent on
+
+" Turn off modelines
+set modelines=0
+
+" Automatically wrap text that extends beyond the screen length
+set wrap
+
+" Identation stuff
+set formatoptions=tcqrn1
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
+set expandtab
+set noshiftround
 set autoindent
 
-"essa config define auto-matchings de parênteses e afins
-inoremap " ""<left>
-inoremap ' ''<left>
-inoremap ( ()<left>
-inoremap < < ><left>
-inoremap [ []<left>
-inoremap { {}<left>
-inoremap {<CR> {<CR>}<ESC>0
-inoremap {;<CR> {<CR>};<ESC>0
+" Display 5 lines above/below the cursor when scrolling with a mouse
+set scrolloff=5
 
-"ativei um search pattern sem querer, agora vou ter que fixar essa config NÃO
-"RETIRAR ESSA CONFIG A MENOS QUE SEJA UTILIZADO O SEARCH PATTERN
-nohlsearch
+" Set status bar
+set laststatus=2
 
-"essa config faz com que o VIM já inicie no modo INSERÇÃO
+" Display options
+set showmode
+set showcmd
+
+" highlighting matching pairs of brackets.
+set matchpairs+=<:>
+
+" set zenburn as default theme with correct colors
+set t_Co=256
+colors zenburn
+
+" set INSERT mode at vim start
 startinsert
