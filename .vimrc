@@ -44,8 +44,8 @@ set showcmd
 set matchpairs+=<:>
 
 " set zenburn as default theme with correct colors
-set t_Co=256
-colors zenburn
+" set t_Co=256
+" colors zenburn
 
 " set INSERT mode at vim start
 startinsert
