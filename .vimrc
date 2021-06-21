@@ -10,7 +10,7 @@ filetype off
 set number
 
 " Turn on syntax highlighting
-syntax on
+syntax off
 
 " For plug-ins to load correctly
 filetype plugin indent on
